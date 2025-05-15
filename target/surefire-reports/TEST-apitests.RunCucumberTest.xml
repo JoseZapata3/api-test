@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="apitests.RunCucumberTest" time="4.883" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/jose.zapata/Documents/University/APIs-development/apitests/target/test-classes:/home/jose.zapata/Documents/University/APIs-development/apitests/target/classes:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-java/7.21.1/cucumber-java-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-core/7.21.1/cucumber-core-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-gherkin/7.21.1/cucumber-gherkin-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.21.1/cucumber-gherkin-messages-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/gherkin/31.0.0/gherkin-31.0.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/messages/27.2.0/messages-27.2.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/testng-xml-formatter/0.3.1/testng-xml-formatter-0.3.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/query/13.2.0/query-13.2.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/datatable/7.21.1/datatable-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-plugin/7.21.1/cucumber-plugin-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/docstring/7.21.1/docstring-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/html-formatter/21.9.0/html-formatter-21.9.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/junit-xml-formatter/0.7.1/junit-xml-formatter-0.7.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/jose.zapata/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.21.1/cucumber-junit-platform-engine-7.21.1.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/jose.zapata/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite/1.11.4/junit-platform-suite-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite-api/1.11.4/junit-platform-suite-api-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.11.4/junit-platform-suite-engine-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.11.4/junit-platform-suite-commons-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.jar:/home/jose.zapata/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/jose.zapata/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/jose.zapata/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/jose.zapata/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/jose.zapata/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/jose.zapata/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/jose.zapata/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/jose.zapata/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/jose.zapata/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/jose.zapata/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/jose.zapata/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/jose.zapata/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/jose.zapata/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/jose.zapata/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/jose.zapata/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/jose.zapata/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/jose.zapata/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/jose.zapata/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/jose.zapata/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/jose.zapata/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/jose.zapata/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/jose.zapata/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/jose.zapata/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/jose.zapata/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/jose.zapata/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/home/jose.zapata/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/jose.zapata/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/jose.zapata/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/home/jose.zapata/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/jose.zapata/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/home/jose.zapata/.m2/repository/org/eclipse/yasson/3.0.4/yasson-3.0.4.jar:/home/jose.zapata/.m2/repository/jakarta/json/bind/jakarta.json.bind-api/3.0.1/jakarta.json.bind-api-3.0.1.jar:/home/jose.zapata/.m2/repository/jakarta/json/jakarta.json-api/2.1.3/jakarta.json-api-2.1.3.jar:/home/jose.zapata/.m2/repository/org/eclipse/parsson/parsson/1.1.7/parsson-1.1.7.jar:"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk/lib"/>
+    <property name="sun.java.command" value="/home/jose.zapata/Documents/University/APIs-development/apitests/target/surefire/surefirebooter-20250514232139860_3.jar /home/jose.zapata/Documents/University/APIs-development/apitests/target/surefire 2025-05-14T23-21-39_697-jvmRun1 surefire-20250514232139860_1tmp surefire_0-20250514232139860_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/jose.zapata/Documents/University/APIs-development/apitests/target/test-classes:/home/jose.zapata/Documents/University/APIs-development/apitests/target/classes:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-java/7.21.1/cucumber-java-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-core/7.21.1/cucumber-core-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-gherkin/7.21.1/cucumber-gherkin-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.21.1/cucumber-gherkin-messages-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/gherkin/31.0.0/gherkin-31.0.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/messages/27.2.0/messages-27.2.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/testng-xml-formatter/0.3.1/testng-xml-formatter-0.3.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/query/13.2.0/query-13.2.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/datatable/7.21.1/datatable-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-plugin/7.21.1/cucumber-plugin-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/docstring/7.21.1/docstring-7.21.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/html-formatter/21.9.0/html-formatter-21.9.0.jar:/home/jose.zapata/.m2/repository/io/cucumber/junit-xml-formatter/0.7.1/junit-xml-formatter-0.7.1.jar:/home/jose.zapata/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/jose.zapata/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/jose.zapata/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.21.1/cucumber-junit-platform-engine-7.21.1.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/home/jose.zapata/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-commons/1.11.4/junit-platform-commons-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite/1.11.4/junit-platform-suite-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite-api/1.11.4/junit-platform-suite-api-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.11.4/junit-platform-suite-engine-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.11.4/junit-platform-suite-commons-1.11.4.jar:/home/jose.zapata/.m2/repository/org/junit/platform/junit-platform-launcher/1.11.4/junit-platform-launcher-1.11.4.jar:/home/jose.zapata/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/home/jose.zapata/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar:/home/jose.zapata/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/jose.zapata/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/jose.zapata/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/jose.zapata/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/jose.zapata/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/jose.zapata/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/jose.zapata/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/jose.zapata/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/jose.zapata/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/jose.zapata/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/jose.zapata/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/jose.zapata/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/jose.zapata/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/jose.zapata/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/jose.zapata/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/jose.zapata/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/jose.zapata/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/jose.zapata/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/jose.zapata/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/jose.zapata/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/jose.zapata/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/jose.zapata/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/jose.zapata/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/jose.zapata/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/home/jose.zapata/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/jose.zapata/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/jose.zapata/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/home/jose.zapata/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/jose.zapata/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/home/jose.zapata/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/home/jose.zapata/.m2/repository/org/eclipse/yasson/3.0.4/yasson-3.0.4.jar:/home/jose.zapata/.m2/repository/jakarta/json/bind/jakarta.json.bind-api/3.0.1/jakarta.json.bind-api-3.0.1.jar:/home/jose.zapata/.m2/repository/jakarta/json/jakarta.json-api/2.1.3/jakarta.json-api-2.1.3.jar:/home/jose.zapata/.m2/repository/org/eclipse/parsson/parsson/1.1.7/parsson-1.1.7.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/jose.zapata"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/jose.zapata/Documents/University/APIs-development/apitests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/jose.zapata/Documents/University/APIs-development/apitests/target/surefire/surefirebooter-20250514232139860_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6"/>
+    <property name="user.name" value="jose.zapata"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.5-200.fc41.x86_64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="(Red_Hat-21.0.7.0.6-1)"/>
+    <property name="localRepository" value="/home/jose.zapata/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&amp;component=java-21-openjdk&amp;version=40"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/home/jose.zapata/Documents/University/APIs-development/apitests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="java.vm.version" value="21.0.7+6"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="Gestión de usuarios vía API REST - Crear un nuevo usuario" classname="Gestión de usuarios vía API REST" time="2.801">
+    <system-out><![CDATA[
+Scenario: Crear un nuevo usuario                                 &amp#27;[90m# apitests/user.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla API está disponible en &amp#27;[0m&amp#27;[32m&amp#27;[1m"http://localhost:8087/api/v1"&amp#27;[0m &amp#27;[90m# apitests.StepDefinitions.la_api_esta_disponible(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m        &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+      "password": "Password1)S1",
+      "firstName": "Jose",
+      "lastName": "Zapata",
+      "email": "josezapata75235@gmail.com",
+      "country": "Colombia",
+      "phonePrefix": "+57",
+      "phone": "3152971212",
+      "dateBirth": "2000-02-03",
+      "role": "PROFESSOR"
+    }
+    """
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel cuerpo de respuesta debe contener el campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m         &amp#27;[90m# apitests.StepDefinitions.verificar_campo_en_respuesta(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Gestión de usuarios vía API REST - Solicitar al servidor el jwt" classname="Gestión de usuarios vía API REST" time="0.315">
+    <system-out><![CDATA[
+Scenario: Solicitar al servidor el jwt                           &amp#27;[90m# apitests/user.feature:25&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla API está disponible en &amp#27;[0m&amp#27;[32m&amp#27;[1m"http://localhost:8087/api/v1"&amp#27;[0m &amp#27;[90m# apitests.StepDefinitions.la_api_esta_disponible(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/auth/login"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m   &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+     "password": "Password1)S1"
+    }
+    """
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mel cuerpo de respuesta debe contener el campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"token"&amp#27;[0m     &amp#27;[90m# apitests.StepDefinitions.verificar_campo_en_respuesta(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Gestión de usuarios vía API REST - Crear, autenticar y eliminar un usuario" classname="Gestión de usuarios vía API REST" time="0.673">
+    <system-out><![CDATA[
+Scenario: Crear, autenticar y eliminar un usuario                &amp#27;[90m# apitests/user.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla API está disponible en &amp#27;[0m&amp#27;[32m&amp#27;[1m"http://localhost:8087/api/v1"&amp#27;[0m &amp#27;[90m# apitests.StepDefinitions.la_api_esta_disponible(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m        &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+     "password": "Password1)S1",
+     "firstName": "Jose",
+     "lastName": "Zapata",
+     "email": "josezapata75235@gmail.com",
+     "country": "Colombia",
+     "phonePrefix": "+57",
+     "phone": "3152971212",
+     "dateBirth": "2000-02-03",
+     "role": "PROFESSOR"
+    }
+    """
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel cuerpo de respuesta debe contener el campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m         &amp#27;[90m# apitests.StepDefinitions.verificar_campo_en_respuesta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/auth/login"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m   &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+     "password": "Password1)S1"
+    }
+    """
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                      &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mexiste un usuario con ID &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                 &amp#27;[90m# apitests.StepDefinitions.existe_un_usuario_con_id(java.lang.Integer)&amp#27;[0m
+my urlhttp://localhost:8087/api/v1/users/1
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud DELETE a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.envio_delete(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m204&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Gestión de usuarios vía API REST - Crear usuarios, autenticar y listar usuarios" classname="Gestión de usuarios vía API REST" time="0.708">
+    <system-out><![CDATA[
+Scenario: Crear usuarios, autenticar y listar usuarios           &amp#27;[90m# apitests/user.feature:64&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla API está disponible en &amp#27;[0m&amp#27;[32m&amp#27;[1m"http://localhost:8087/api/v1"&amp#27;[0m &amp#27;[90m# apitests.StepDefinitions.la_api_esta_disponible(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m        &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+     "password": "Password1)S1",
+     "firstName": "Jose",
+     "lastName": "Zapata",
+     "email": "jazapatao_1@uqvirtual.edu.co",
+     "country": "Colombia",
+     "phonePrefix": "+57",
+     "phone": "3152971212",
+     "dateBirth": "2000-02-03",
+     "role": "PROFESSOR"
+    }
+    """
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel cuerpo de respuesta debe contener el campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m         &amp#27;[90m# apitests.StepDefinitions.verificar_campo_en_respuesta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m        &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "bryan.gomez",
+     "password": "Password1)S1",
+     "firstName": "Bryan",
+     "lastName": "Gomez",
+     "email": "jazapatao_1@uqvirtual.edu.co",
+     "country": "Colombia",
+     "phonePrefix": "+57",
+     "phone": "3152971212",
+     "dateBirth": "2000-02-03",
+     "role": "STUDENT"
+    }
+    """
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel cuerpo de respuesta debe contener el campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m         &amp#27;[90m# apitests.StepDefinitions.verificar_campo_en_respuesta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/auth/login"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m   &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+     "password": "Password1)S1"
+    }
+    """
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                      &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud GET a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m                        &amp#27;[90m# apitests.StepDefinitions.envio_get(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel cuerpo debe ser una lista de usuarios&amp#27;[0m                   &amp#27;[90m# apitests.StepDefinitions.verificar_lista()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Gestión de usuarios vía API REST - Crear y eliminar un usuario sin token" classname="Gestión de usuarios vía API REST" time="0.235">
+    <system-out><![CDATA[
+Scenario: Crear y eliminar un usuario sin token                  &amp#27;[90m# apitests/user.feature:109&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla API está disponible en &amp#27;[0m&amp#27;[32m&amp#27;[1m"http://localhost:8087/api/v1"&amp#27;[0m &amp#27;[90m# apitests.StepDefinitions.la_api_esta_disponible(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud POST a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m&amp#27;[32m con el cuerpo:&amp#27;[0m        &amp#27;[90m# apitests.StepDefinitions.envio_post_con_body(java.lang.String,java.lang.String)&amp#27;[0m
+    """
+    {
+     "username": "jose.alejandro",
+     "password": "Password1)S1",
+     "firstName": "Jose",
+     "lastName": "Zapata",
+     "email": "josezapata75235@gmail.com",
+     "country": "Colombia",
+     "phonePrefix": "+57",
+     "phone": "3152971212",
+     "dateBirth": "2000-02-03",
+     "role": "PROFESSOR"
+    }
+    """
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mel cuerpo de respuesta debe contener el campo &amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m         &amp#27;[90m# apitests.StepDefinitions.verificar_campo_en_respuesta(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mexiste un usuario con ID &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                               &amp#27;[90m# apitests.StepDefinitions.existe_un_usuario_con_id(java.lang.Integer)&amp#27;[0m
+my urlhttp://localhost:8087/api/v1/users/1
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud DELETE a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.envio_delete(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m401&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Gestión de usuarios vía API REST - Listar todos los usuarios sin token" classname="Gestión de usuarios vía API REST" time="0.021">
+    <system-out><![CDATA[
+Scenario: Listar todos los usuarios sin token                    &amp#27;[90m# apitests/user.feature:130&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mla API está disponible en &amp#27;[0m&amp#27;[32m&amp#27;[1m"http://localhost:8087/api/v1"&amp#27;[0m &amp#27;[90m# apitests.StepDefinitions.la_api_esta_disponible(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32menvío una solicitud GET a &amp#27;[0m&amp#27;[32m&amp#27;[1m"/users"&amp#27;[0m                        &amp#27;[90m# apitests.StepDefinitions.envio_get(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mla respuesta debe tener un código &amp#27;[0m&amp#27;[32m&amp#27;[1m401&amp#27;[0m                     &amp#27;[90m# apitests.StepDefinitions.verificar_codigo(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
