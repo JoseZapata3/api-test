@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: apitests.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.883 s -- in apitests.RunCucumberTest
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.155 s <<< FAILURE! -- in apitests.RunCucumberTest
+Gestión de usuarios vía API REST.Gestión de usuarios vía API REST - Crear, autenticar y eliminar un usuario -- Time elapsed: 0.388 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is <204>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at apitests.StepDefinitions.verificar_codigo(StepDefinitions.java:63)
+	at ✽.la respuesta debe tener un código 204(classpath:apitests/user.feature:62)
+
