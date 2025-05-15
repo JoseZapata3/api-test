@@ -1,7 +1,7 @@
 Feature: Gestión de usuarios vía API REST
 
   Background:
-    Given la API está disponible en "http://host.docker.internal:8087/api/v1"
+    Given la API está disponible en "http://localhosts:8087/api/v1"
 
   Scenario: Crear un nuevo usuario
     When envío una solicitud POST a "/users" con el cuerpo:
