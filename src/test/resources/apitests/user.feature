@@ -2,6 +2,7 @@ Feature: Gestión de usuarios vía API REST
 
   Background:
     Given la API está disponible en "http://localhosts:8087/api/v1"
+    and el usuario jose.alejandro no existe
 
   Scenario: Crear un nuevo usuario
     When envío una solicitud POST a "/users" con el cuerpo:
