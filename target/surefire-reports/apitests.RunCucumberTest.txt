@@ -1,14 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: apitests.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.208 s <<< FAILURE! -- in apitests.RunCucumberTest
-Gestión de usuarios vía API REST.Gestión de usuarios vía API REST - Crear, autenticar y eliminar un usuario -- Time elapsed: 0.684 s <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 4.154 s <<< FAILURE! -- in apitests.RunCucumberTest
+Gestión de usuarios vía API REST.Gestión de usuarios vía API REST - Crear un nuevo usuario -- Time elapsed: 1.664 s <<< FAILURE!
+java.lang.AssertionError: El usuario 'jose.alejandro' ya existe. El paso requiere que no exista.
+	at apitests.StepDefinitions.el_usuario_no_existe(StepDefinitions.java:38)
+	at ✽.el usuario "jose.alejandro" no existe(classpath:apitests/user.feature:7)
+
+Gestión de usuarios vía API REST.Gestión de usuarios vía API REST - Crear, autenticar y eliminar un usuario -- Time elapsed: 0.617 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expected: is <204>
      but: was <404>
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at apitests.StepDefinitions.verificar_codigo(StepDefinitions.java:63)
-	at ✽.la respuesta debe tener un código 204(classpath:apitests/user.feature:62)
+	at apitests.StepDefinitions.verificar_codigo(StepDefinitions.java:98)
+	at ✽.la respuesta debe tener un código 204(classpath:apitests/user.feature:63)
+
+Gestión de usuarios vía API REST.Gestión de usuarios vía API REST - Crear y eliminar un usuario sin token -- Time elapsed: 0.169 s <<< FAILURE!
+java.lang.AssertionError: El usuario 'jose.alejandro' ya existe. El paso requiere que no exista.
+	at apitests.StepDefinitions.el_usuario_no_existe(StepDefinitions.java:38)
+	at ✽.el usuario "jose.alejandro" no existe(classpath:apitests/user.feature:111)
 

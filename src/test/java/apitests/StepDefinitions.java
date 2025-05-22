@@ -22,7 +22,24 @@ public class StepDefinitions {
     public void existe_un_usuario_con_id(Integer userId) {
        this.userId = userId;
     }
-	
+
+	@Given("el usuario {string} no existe")
+	public void el_usuario_no_existe(String username) {
+		Response response = RestAssured
+				.given()
+				.contentType("application/json")
+				.body("{\"username\": \"" + username + "\", \"password\": \"Password1)S1\"}")
+				.when()
+				.post(baseUrl + "/auth/login");
+
+		int status = response.getStatusCode();
+
+		if (status == 200) {
+			throw new AssertionError("El usuario '" + username + "' ya existe. El paso requiere que no exista.");
+		}
+	}
+
+
 	@Given("no existe un recurso en {string} con el cuerpo:")
 	public void no_existe_recurso(String endpoint, String body) {
 		Response checkResponse = RestAssured

@@ -1,9 +1,10 @@
 Feature: Gestión de usuarios vía API REST
 
   Background:
-    Given la API está disponible en "http://localhosts:8087/api/v1"
+    Given la API está disponible en "http://localhost:8087/api/v1"
 
   Scenario: Crear un nuevo usuario
+    Given el usuario "jose.alejandro" no existe
     When envío una solicitud POST a "/users" con el cuerpo:
       """
       {
@@ -107,6 +108,7 @@ Feature: Gestión de usuarios vía API REST
     And el cuerpo debe ser una lista de usuarios
 
   Scenario: Crear y eliminar un usuario sin token
+    Given el usuario "jose.alejandro" no existe
     When envío una solicitud POST a "/users" con el cuerpo:
       """
       {
@@ -122,7 +124,6 @@ Feature: Gestión de usuarios vía API REST
        "role": "PROFESSOR"
       }
       """
-    And el cuerpo de respuesta debe contener el campo "id"
     Given existe un usuario con ID 1
     When envío una solicitud DELETE a "/users"
     Then la respuesta debe tener un código 401

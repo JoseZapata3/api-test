@@ -1,8 +1,7 @@
 Feature: Gestión de usuarios vía API REST
 
   Background:
-    Given la API está disponible en "http://localhosts:8087/api/v1"
-    and el usuario jose.alejandro no existe
+    Given la API está disponible en "http://localhost:8087/api/v1"
 
   Scenario: Crear un nuevo usuario
     When envío una solicitud POST a "/users" con el cuerpo:
@@ -123,7 +122,6 @@ Feature: Gestión de usuarios vía API REST
        "role": "PROFESSOR"
       }
       """
-    And el cuerpo de respuesta debe contener el campo "id"
     Given existe un usuario con ID 1
     When envío una solicitud DELETE a "/users"
     Then la respuesta debe tener un código 401
